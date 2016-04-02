@@ -1,0 +1,31 @@
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Angular</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="lib/angular.js"></script>
+        <script src="lib/angular-route.js"></script>
+        <script src="js/app.module.js"></script>
+        <script src="js/app.config.js"></script>
+        <script src="modulos/basico/basico.module.js"></script>
+        <script src="modulos/basico/basico.controller.js"></script>
+        <script src="modulos/filtro/filtro.module.js"></script>
+        <script src="modulos/filtro/filtro.controller.js"></script>
+    </head>
+    <body ng-app="app">
+        <div>
+            <div ng-include="'partials/header.html'"></div>
+        </div>
+        <div class="container-fluid">
+            <div class="col-md-2 text-center">
+                <div ng-include="'partials/left-menu.html'"></div>
+            </div>
+            <div class="col-md-10">
+                <div ng-view></div>
+            </div>
+        </div>
+        <div>
+            <div ng-include="'partials/footer.html'"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "estudo_livro_angular",
+  "version": "1.0.0",
+  "description": "Estrudo do Livro de Angular",
+  "main": "index.js",
+  "author": "Pedro Fernando",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
