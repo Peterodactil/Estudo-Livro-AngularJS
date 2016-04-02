@@ -1,2 +1,1 @@
-angular
-    .module('app.basico', [])
+angular.module('app.basico', [])

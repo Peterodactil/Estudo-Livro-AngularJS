@@ -1,2 +1,1 @@
-angular
-    .module('app.filtro', []);
+angular.module('app.filtro', []);

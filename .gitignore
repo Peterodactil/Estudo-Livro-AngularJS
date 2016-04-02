@@ -1,3 +1,6 @@
+# Custom
+bower_components
+
 # Logs
 logs
 *.log
@@ -77,9 +80,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# Custom
-bower_components
-css
-lib
-fonts

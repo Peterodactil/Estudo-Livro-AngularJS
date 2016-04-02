@@ -1,5 +1,7 @@
 angular
-    .module('app.filtro')
-    .controller('FiltroController', function() {
-        console.log('FiltroController');
-    });
+  .module('app.filtro')
+  .controller('FiltroController', FiltroController);
+
+function FiltroController() {
+  
+};
