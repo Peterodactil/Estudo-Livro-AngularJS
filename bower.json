@@ -11,6 +11,8 @@
   ],
   "homepage": "",
   "dependencies": {
-    "angular": "angularjs#1.3.11"
+    "angular": "angularjs#1.3.11",
+    "bootstrap": "^3.3.6",
+    "angular-route": "1.3.11"
   }
 }
