@@ -1,12 +1,12 @@
 angular
   .module('app')
-  .directive('li', function() {
+  .directive('ul', function() {
     return {
       restrict: 'E',
-      link: function(scope, elem, attr, ctrl) {
-        elem.on('click', function() {
-          elem.parent().find('li').removeClass('active');
-          elem.addClass('active');
+      link: function(scope, elem, attr) {
+        elem.find('li').on('click', function() {
+          elem.find('li').removeClass('active');
+          $(this).addClass('active');
         });
       }
     };
