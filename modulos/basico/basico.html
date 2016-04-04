@@ -1,11 +1,17 @@
+<h3>ngInit</h3>
+
+<p ng-init="basicoCtrl.descricao = 'AngularJS'">{{basicoCtrl.descricao}}</p>
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
+
 <h3>ngBind</h3>
 
-<p><span ng-bind="basicoCtrl.hello"></span> AngularJS.</p>
-<p>{{basicoCtrl.goodbye}} AngularJS.</p>
+<p ng-bind="basicoCtrl.hello"></p>
+<p>{{basicoCtrl.goodbye}}</p>
 
-<input type="text" ng-model="name" placeholder="Insira um nome">
-<p>ng-bind="name": <span ng-bind="name"></span></p>
-<p>{name}: {{ name }}</p>
+<input type="text" ng-model="basicoCtrl.nome" placeholder="Insira um nome">
+<p>ng-bind="name": <span ng-bind="basicoCtrl.nome"></span></p>
+<p>{ {name} }: {{ basicoCtrl.name }}</p>
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
 
 <h3>ngClick</h3>
 
@@ -13,17 +19,17 @@
   Trocar mensagem
 </button>
 <span>Mensagem: {{basicoCtrl.mensagem}}</span>
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
 
 <h3>ngRepeat</h3>
 
 <div ng-repeat="registro in basicoCtrl.lista">
-  <span ng-bind="registro.label"></span>
-  <span ng-bind="registro.done"></span>
+  <span>{{registro.id}} - {{registro.label}}</span>
 </div>
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
 
 <h3>ngClass</h3>
 
-<div ng-repeat="registro in basicoCtrl.lista" ng-class="basicoCtrl.getNoteClass(registro.done)">
-  <span ng-bind="registro.label"></span>
-  <span ng-bind="registro.done"></span>
+<div ng-repeat="registro in basicoCtrl.lista" ng-class="basicoCtrl.getStatusConcluido(registro.concluido)">
+  <span>{{registro.label}} - {{registro.concluido}}</span>
 </div>

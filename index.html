@@ -9,22 +9,24 @@
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script src="js/app.module.js"></script>
-        <script src="js/app.directive.js"></script>
+        <script src="js/diretivas/ul.directive.js"></script>
         <script src="js/app.routes.js"></script>
         <script src="modulos/basico/basico.module.js"></script>
         <script src="modulos/basico/basico.controller.js"></script>
+        <script src="modulos/formulario/formulario.module.js"></script>
+        <script src="modulos/formulario/formulario.controller.js"></script>
         <script src="modulos/filtro/filtro.module.js"></script>
         <script src="modulos/filtro/filtro.controller.js"></script>
     </head>
-    <body ng-app="app">
+    <body ng-app="app" class="container">
         <div>
             <div ng-include="'partials/header.html'"></div>
         </div>
-        <div class="container-fluid">
-            <div class="col-md-2">
+        <div class="container">
+            <div class="col-sm-4 col-md-3">
                 <div ng-include="'partials/left-menu.html'"></div>
             </div>
-            <div class="col-md-10">
+            <div class="col-sm-8 col-md-9">
                 <div ng-view></div>
             </div>
         </div>

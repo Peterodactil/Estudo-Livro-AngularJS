@@ -7,6 +7,18 @@ function BasicoController() {
 
   vm.hello = "Hello";
   vm.goodbye = "Goodbye";
+  vm.mensagem = "Hello"
+
+  vm.lista = [
+    {id: 1, label: 'Atividade 1', concluido: false},
+    {id: 2, label: 'Atividade 2', concluido: true},
+    {id: 3, label: 'Atividade 3', concluido: false},
+    {id: 4, label: 'Atividade 4', concluido: true}
+  ];
+
+  vm.getStatusConcluido = function(concluido) {
+    return { 'text-success': concluido, 'text-danger': !concluido };
+  };
 
   vm.onClickTrocarMensagem = function() {
     if (vm.mensagem == "Hello"){
@@ -14,16 +26,5 @@ function BasicoController() {
     } else {
       vm.mensagem = 'Hello';
     }
-  };
-
-  vm.lista = [
-    {id: 1, label: 'Nota 1', done: false},
-    {id: 2, label: 'Nota 2', done: true},
-    {id: 3, label: 'Nota 3', done: false},
-    {id: 4, label: 'Nota 4', done: true}
-  ];
-
-  vm.getNoteClass = function(status) {
-    return { 'text-success': status, 'text-danger': !status };
   };
 }
