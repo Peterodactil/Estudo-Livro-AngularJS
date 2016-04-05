@@ -2,6 +2,5 @@ angular
   .module('app.formulario')
   .controller('FormularioController', FormularioController);
 
-function FormularioController() {
-
+function FormularioController($scope) {
 };

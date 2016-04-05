@@ -1,1 +1,3 @@
-angular.module('app.formulario', []);
+angular.module('app.formulario', [
+  'ngMessages'
+]);
