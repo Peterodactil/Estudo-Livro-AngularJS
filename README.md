@@ -4,7 +4,7 @@ Requisitos:
 * NodeJS
 * Bower
 
-Comandos:
+Executar os comandos:
 * npm install
 * bower install
 
