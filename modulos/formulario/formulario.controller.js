@@ -27,4 +27,8 @@ function FormularioController($scope) {
 
   vm.onChangeSexo();
 
+  vm.formSubmit = function() {
+    console.log('Formulário enviado');
+  }
+
 };
