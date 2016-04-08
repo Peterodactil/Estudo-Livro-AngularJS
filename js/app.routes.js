@@ -9,6 +9,11 @@ angular
             controller: 'BasicoController',
             controllerAs: 'basicoCtrl'
         })
+        .when('/diretiva', {
+            templateUrl: '/modulos/diretiva/diretiva.html',
+            controller: 'DiretivaController',
+            controllerAs: 'diretivaCtrl'
+        })
         .when('/formulario', {
             templateUrl: '/modulos/formulario/formulario.html',
             controller: 'FormularioController',
