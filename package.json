@@ -1,8 +1,8 @@
 {
   "name": "estudo_livro_angular",
   "version": "1.0.0",
-  "description": "Estrudo do Livro de Angular",
-  "main": "index.js",
+  "description": "Estudo do Livro de AngularJS",
+  "main": "index.html",
   "author": "Pedro Fernando",
   "license": "ISC",
   "dependencies": {

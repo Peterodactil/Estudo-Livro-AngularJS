@@ -1,7 +1,7 @@
 {
   "name": "estudo_livro_angular",
-  "description": "Estrudo do Livro de Angular",
-  "main": "index.js",
+  "description": "Estudo do Livro de AngularJS",
+  "main": "index.html",
   "authors": [
     "Pedro Fernando"
   ],
