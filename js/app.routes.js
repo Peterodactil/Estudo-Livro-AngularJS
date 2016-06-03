@@ -1,7 +1,7 @@
 angular
     .module('app')
     .config(['$routeProvider', function($routeProvider) {
-        var site_prefix = '/Estudo-Livro-AngularJS';
+        var site_prefix = '/Estudo-Livro-AngularJS/#';
 
         $routeProvider.when(site_prefix + '/', {
             template: '<h3>Página Inicial</h3>'
