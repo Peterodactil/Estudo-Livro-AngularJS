@@ -25,6 +25,6 @@ angular
             templateUrl: 'modulos/filtro/filtro.html',
             controller: 'FiltroController',
             controllerAs: 'filtroCtrl'
-        })
-        .otherwise({redirectTo: '/'});
+        });
+        //.otherwise({redirectTo: '/'});
     }]);
