@@ -1,1 +1,1 @@
-:point_right: [:smiling_imp:](peterodactil.github.io/estudo-angularjs/)
+:point_right: [:smiling_imp:](http://peterodactil.github.io/estudo-angularjs/)
