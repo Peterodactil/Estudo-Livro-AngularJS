@@ -1,8 +1,8 @@
 angular
     .module('app')
-    .config(['$routeProvider', function($routeProvider) {
-        var site_prefix = '/Estudo-Livro-AngularJS';
-        
+    .config(function($routeProvider) {
+        var site_prefix = this.document.location.pathname.replace('/', '');
+
         $routeProvider.when('/', {
             template: '<h3>Página Inicial</h3>'
         })
@@ -27,4 +27,4 @@ angular
             controllerAs: 'filtroCtrl'
         })
         .otherwise({redirectTo: '/'});
-    }]);
+    });
